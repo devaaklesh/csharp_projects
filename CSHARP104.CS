@@ -1,21 +1,31 @@
-using System;
-class Program
+﻿using System;
+
+// CSHARP104.CS
+// Auto-generated program stub.
+
+public class Program
 {
-    static void Main()
+    public static void Main(string[] args)
     {
-        int n,rev=0,r,temp;
-        Console.Write("Enter number: ");
-        n=int.Parse(Console.ReadLine());
-        temp=n;
-        while(n>0)
-        {
-            r=n%10;
-            rev=rev*10+r;
-            n/=10;
-        }
-        if(temp==rev)
-            Console.WriteLine("Palindrome");
-        else
-            Console.WriteLine("Not Palindrome");
+        Console.WriteLine("CSHARP104.CS - Auto-generated stub file.");
+        Console.WriteLine("This program demonstrates a basic C# template.");
+        Console.WriteLine("Add(5, 7) = " + Add(5, 7));
+        Console.WriteLine("Multiply(10, 3) = " + Multiply(10, 3));
+        DisplayMessage();
+    }
+
+    static int Add(int x, int y)
+    {
+        return x + y;
+    }
+
+    static int Multiply(int x, int y)
+    {
+        return x * y;
+    }
+
+    static void DisplayMessage()
+    {
+        Console.WriteLine("Static methods can be called without creating an instance of a class.");
     }
 }

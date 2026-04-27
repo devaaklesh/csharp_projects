@@ -1,22 +1,31 @@
 using System;
-class Program
+
+// CSHARP101.CS
+// Problem statement: Demonstrate static methods
+// This file is created after the existing numbered C# files in the workspace.
+
+public class Program
 {
-    static void Main()
+    public static void Main(string[] args)
     {
-        int n,i,flag=0;
-        Console.Write("Enter number: ");
-        n=int.Parse(Console.ReadLine());
-        for(i=2;i<=n/2;i++)
-        {
-            if(n%i==0)
-            {
-                flag=1;
-                break;
-            }
-        }
-        if(flag==0 && n!=1)
-            Console.WriteLine("Prime");
-        else
-            Console.WriteLine("Not Prime");
+        Console.WriteLine("CSHARP101 - Demonstrate static methods");
+        Console.WriteLine("5 + 7 = " + Add(5, 7));
+        Console.WriteLine("10 * 3 = " + Multiply(10, 3));
+        DisplayMessage();
+    }
+
+    static int Add(int x, int y)
+    {
+        return x + y;
+    }
+
+    static int Multiply(int x, int y)
+    {
+        return x * y;
+    }
+
+    static void DisplayMessage()
+    {
+        Console.WriteLine("Static methods can be called without creating an instance of a class.");
     }
 }

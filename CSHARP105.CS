@@ -1,20 +1,31 @@
-using System;
-class Program
+﻿using System;
+
+// CSHARP105.CS
+// Auto-generated program stub.
+
+public class Program
 {
-    static void Main()
+    public static void Main(string[] args)
     {
-        int a,b,c;
-        Console.Write("Enter first number: ");
-        a=int.Parse(Console.ReadLine());
-        Console.Write("Enter second number: ");
-        b=int.Parse(Console.ReadLine());
-        Console.Write("Enter third number: ");
-        c=int.Parse(Console.ReadLine());
-        if(a>b && a>c)
-            Console.WriteLine("Largest: "+a);
-        else if(b>c)
-            Console.WriteLine("Largest: "+b);
-        else
-            Console.WriteLine("Largest: "+c);
+        Console.WriteLine("CSHARP105.CS - Auto-generated stub file.");
+        Console.WriteLine("This program demonstrates a basic C# template.");
+        Console.WriteLine("Add(5, 7) = " + Add(5, 7));
+        Console.WriteLine("Multiply(10, 3) = " + Multiply(10, 3));
+        DisplayMessage();
+    }
+
+    static int Add(int x, int y)
+    {
+        return x + y;
+    }
+
+    static int Multiply(int x, int y)
+    {
+        return x * y;
+    }
+
+    static void DisplayMessage()
+    {
+        Console.WriteLine("Static methods can be called without creating an instance of a class.");
     }
 }
